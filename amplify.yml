@@ -8,7 +8,6 @@ frontend:
         - echo "MONGODB_DB=$MONGODB_DB" >> .env
         - echo "BETTER_AUTH_SECRET=$BETTER_AUTH_SECRET" >> .env
         - echo "BETTER_AUTH_URL=$BETTER_AUTH_URL" >> .env
-        - echo "NODE_ENV=$NODE_ENV" >> .env
     build:
       commands:
         - npm run build
