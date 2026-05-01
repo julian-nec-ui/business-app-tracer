@@ -4,6 +4,12 @@ frontend:
     preBuild:
       commands:
         - npm ci
+        - npm install
+        - echo "MONGODB_URI=$MONGODB_URI" >> .env.local
+        - echo "MONGODB_DB=$MONGODB_DB" >> .env.local
+        - echo "BETTER_AUTH_SECRET=$BETTER_AUTH_SECRET" >> .env.local
+        - echo "BETTER_AUTH_URL=$BETTER_AUTH_URL" >> .env.local
+        - echo "NODE_ENV=$NODE_ENV" >> .env.local
     build:
       commands:
         - npm run build
