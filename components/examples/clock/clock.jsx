@@ -2,19 +2,20 @@
 import { useEffect, useState } from "react";
 
 export default function Clock() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(null);
 
- useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
-      setTime(new Date());
+      setTime(new Date().toUTCString());
     }, 1000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold mb-4">Current Time</h1>
-      <p className="text-2xl">{time.toLocaleTimeString()}</p>
+      <span className="rounded-sm bg-sky-900 w-70">
+        <p className="font-sans text-center text-white text-md tabular-nums">{time ?? 'reloading ...'}</p>
+      </span>
     </div>
   );
 }

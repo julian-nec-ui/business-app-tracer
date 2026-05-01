@@ -7,11 +7,12 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuTrigg
 import { Avatar, AvatarFallback } from './ui/avatar';
 import SignOutButton from './ui/sign-out';
 import { useSession } from '@/lib/auth/auth-client';
+import Clock from './examples/clock/clock';
 
 export default function Navbar() {
   const { data: session } = useSession();
   return (
-    <nav className='border-b border-gray-200 bg-white'>
+    <nav className='bg-white border-b border-gray-200'>
       <div className={`container mx-auto 
             flex h-16 items-center gap-5
             px-4 justify-between`}
@@ -30,9 +31,9 @@ export default function Navbar() {
               </Link>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button variant='ghost' size="icon" asChild className="rounded-full p-0">
+                  <Button variant='ghost' size="icon" asChild className="p-0 rounded-full">
                     <Avatar>
-                      <AvatarFallback className="bg-blue-500 text-white font-bold">{session.user.name[0].toUpperCase()}</AvatarFallback>
+                      <AvatarFallback className="font-bold text-white bg-blue-500">{session.user.name[0].toUpperCase()}</AvatarFallback>
                     </Avatar>
                   </Button>
                 </DropdownMenuTrigger>
@@ -49,13 +50,14 @@ export default function Navbar() {
               </DropdownMenu>
             </>) : (
             <>
+              <Clock />
               <Link href="/sign-in" >
                 <Button variant="ghost" className='text-gray-700 hover:text-black'>
                   Login
                 </Button>
               </Link>
               <Link href="/sign-up">
-                <Button variant='primary'>
+                <Button variant='ghost'>
                   Sign Up for free
                   <UserPlusIcon />
                 </Button>
