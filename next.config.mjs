@@ -3,6 +3,7 @@
  */
  
 const nextConfig = {
+  output: "export",
   reactCompiler: true,
   cacheComponents: true
 };
