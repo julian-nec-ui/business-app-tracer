@@ -1,6 +1,4 @@
 
-export const revalidate = 60;
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
