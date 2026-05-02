@@ -6,7 +6,7 @@
   "homepage": "https://julian-nec-ui.github.io/business-app-tracer",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
