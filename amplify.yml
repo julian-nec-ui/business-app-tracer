@@ -12,7 +12,7 @@ frontend:
         - echo "BETTER_AUTH_URL=$BETTER_AUTH_URL" >> .env.local
         - npm run build
   artifacts:
-    baseDirectory: ./next
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
