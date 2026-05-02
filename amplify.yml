@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - npm ci
     build:
       commands:
         - echo "MONGODB_URI=$MONGODB_URI" >> .env.local
