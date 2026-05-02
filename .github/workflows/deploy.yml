@@ -33,7 +33,14 @@ jobs:
         run: npm install # Use 'yarn install' or 'pnpm install' if you don't use npm
         
       - name: Build with Next.js
-        run: npx next build
+        run: npm run build
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB }}
+          BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET }}
+          NEXT_PUBLIC_BETTER_AUTH_URL: ${{ secrets.NEXT_PUBLIC_BETTER_AUTH_URL }}
+          BETTER_AUTH_URL: ${{ secrets.BETTER_AUTH_URL }}
+        
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
