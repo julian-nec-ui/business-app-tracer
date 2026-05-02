@@ -6,10 +6,6 @@ frontend:
         - npm install
     build:
       commands:
-        - echo "MONGODB_URI=$MONGODB_URI" >> .env
-        - echo "MONGODB_DB=$MONGODB_DB" >> .env
-        - echo "BETTER_AUTH_SECRET=$BETTER_AUTH_SECRET" >> .env
-        - echo "BETTER_AUTH_URL=$BETTER_AUTH_URL" >> .env
         - npm run build
   artifacts:
     baseDirectory: dist
