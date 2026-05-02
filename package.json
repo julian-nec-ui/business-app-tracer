@@ -4,11 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev & open -a \"Google Chrome\" http://localhost:3000",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start & open -a \"Google Chrome\" http://localhost:3000",
-    "lint": "eslint",
-    "stop": "kill -9 $(pgrep -f \"^next*\")"
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
     "@better-auth/mongo-adapter": "^1.5.3",
