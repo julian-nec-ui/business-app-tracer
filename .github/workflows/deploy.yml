@@ -30,7 +30,7 @@ jobs:
           node-version: "20" # You can change this to match your local Node version
           
       - name: Install dependencies
-        run: npm ci # Use 'yarn install' or 'pnpm install' if you don't use npm
+        run: npm install # Use 'yarn install' or 'pnpm install' if you don't use npm
         
       - name: Build with Next.js
         run: npx next build
