@@ -34,15 +34,14 @@ async function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-white-100">
-      <div className="container mx-auto p-6">
+      <div className="container p-6 mx-auto">
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-black">
             {board.name || "Default Dashboard"}
           </h1>
-          <p className="text-gray-600 mb-2">Manage your job applications efficiently.</p>
+          <p className="mb-2 text-gray-600">Manage your job applications efficiently.</p>
           <ReloadJobs userId={session?.user.id} boardId={board._id} />
         </div>
-
       </div>
     </div>
   );
@@ -57,7 +56,7 @@ export default function Dashboard() {
                 hover:bg-green-800/20 hover:text-[#045a43] 
                 transition-all duration-300 ease-in-out`}
           >
-            {DashboardPage ? <Refresh className="mr-2 h-3 w-3 animate-spin" /> : <Refresh className="mr-2 h-3 w-3" />}
+            {DashboardPage ? <Refresh className="w-3 h-3 mr-2 animate-spin" /> : <Refresh className="w-3 h-3 mr-2" />}
             <br/><br/>
             Loading ... Please wait ...
           </span>}>
