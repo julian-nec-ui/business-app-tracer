@@ -11,6 +11,7 @@ frontend:
         - echo "BETTER_AUTH_SECRET=$BETTER_AUTH_SECRET" >> .env.local
         - echo "BETTER_AUTH_URL=$BETTER_AUTH_URL" >> .env.local
         - npm run build
+        - npm run start
   artifacts:
     baseDirectory: .next
     files:
