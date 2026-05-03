@@ -1,0 +1,41 @@
+{
+  "node": {
+    "602b754c08f3c9797a5ddbd2b72c78a24997488d1e": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 817983,
+          "async": true,
+          "exportedName": "getBoard",
+          "filename": "lib/actions/job-applications.js"
+        }
+      },
+      "exportedName": "getBoard",
+      "filename": "lib/actions/job-applications.js"
+    },
+    "40d5c85a2f682414f09d42340fa93ba9c820d6dcaf": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 817983,
+          "async": true,
+          "exportedName": "createJobApplication",
+          "filename": "lib/actions/job-applications.js"
+        }
+      },
+      "exportedName": "createJobApplication",
+      "filename": "lib/actions/job-applications.js"
+    },
+    "604d5c459aa617d2259cf431a5cf384039e46931af": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 817983,
+          "async": true,
+          "exportedName": "deleteJobColumn",
+          "filename": "lib/actions/job-applications.js"
+        }
+      },
+      "exportedName": "deleteJobColumn",
+      "filename": "lib/actions/job-applications.js"
+    }
+  },
+  "edge": {}
+}

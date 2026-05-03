@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/flowbite/page": "app/flowbite/page.js",
+  "/legal/agreement/page": "app/legal/agreement/page.js",
+  "/legal/policy/page": "app/legal/policy/page.js",
+  "/page": "app/page.js",
+  "/sign-in/page": "app/sign-in/page.js",
+  "/sign-up/page": "app/sign-up/page.js",
+  "/table/page": "app/table/page.js"
+}

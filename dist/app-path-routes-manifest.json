@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...all]/route": "/api/auth/[...all]",
+  "/dashboard/page": "/dashboard",
+  "/flowbite/page": "/flowbite",
+  "/legal/agreement/page": "/legal/agreement",
+  "/legal/policy/page": "/legal/policy",
+  "/page": "/",
+  "/sign-in/page": "/sign-in",
+  "/sign-up/page": "/sign-up",
+  "/table/page": "/table"
+}

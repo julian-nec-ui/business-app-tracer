@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     },
     "target": "ES2017",
     "lib": [
@@ -32,8 +34,12 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/api/auth/[...all]/route.js", "app/api/auth/[...all]/.js"  ],
+    "**/*.tsx",
+    "app/api/auth/[...all]/route.js",
+    "app/api/auth/[...all]/.js",
+    "dist/types/**/*.ts",
+    "dist/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

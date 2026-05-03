@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: ".next",
-  reactCompiler: true,
-  cacheComponents: true
+  output: "export",
+  distDir: "dist",
+  images: {
+    unoptimized: true
+  }
 };
 
 export default nextConfig;
