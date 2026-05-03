@@ -25,9 +25,10 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20" # You can change this to match your local Node version
+          node-version: "25.9.0" # You can change this to match your local Node version
+          cache: 'npm'
           
       - name: Install dependencies
         run: npm install # Use 'yarn install' or 'pnpm install' if you don't use npm
