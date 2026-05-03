@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
-          node-version: "25.9.0" # You can change this to match your local Node version
+          node-version: "25.x" # You can change this to match your local Node version
           cache: 'npm'
           
       - name: Install dependencies
