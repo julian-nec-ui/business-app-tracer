@@ -41,11 +41,10 @@ jobs:
           NEXT_PUBLIC_BETTER_AUTH_URL: ${{ secrets.NEXT_PUBLIC_BETTER_AUTH_URL }}
           BETTER_AUTH_URL: ${{ secrets.BETTER_AUTH_URL }}
         
-        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out # Next.js exports static files to the 'out' directory by default
+          path: .next # Next.js exports static files to the 'out' directory by default
 
   # Deployment job
   deploy:
