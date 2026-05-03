@@ -12,8 +12,6 @@ import { useEffect, useState } from "react";
 import { signIn } from "@/lib/auth/auth-client";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
-import Clock from "@/components/examples/clock/clock";
-
 
 const SignIn = () => {
 

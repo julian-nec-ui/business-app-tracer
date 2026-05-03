@@ -32,6 +32,10 @@ jobs:
       - name: Install dependencies
         run: npm install # Use 'yarn install' or 'pnpm install' if you don't use npm
         
+      - name: Setup Pages
+        id: setup_pages
+        uses: actions/configure-pages@v5
+
       - name: Build with Next.js
         run: npm run build
         env:
