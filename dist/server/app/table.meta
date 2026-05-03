@@ -1,7 +1,5 @@
 {
-  "status": 200,
   "headers": {
-    "link": "</_next/static/media/797e433ab948586e-s.p.0.q-h669a_dqa.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/caa3a2e1cccd8315-s.p.16t1db8_9y2o~.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", <https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png>; rel=preload; as=\"image\", <https://flowbite.s3.amazonaws.com/blocks/application-ui/devices/apple-iphone-14.png>; rel=preload; as=\"image\", <https://flowbite.s3.amazonaws.com/blocks/application-ui/devices/apple-ipad-air.png>; rel=preload; as=\"image\", <https://flowbite.s3.amazonaws.com/blocks/application-ui/devices/xbox-series-s.png>; rel=preload; as=\"image\", <https://flowbite.s3.amazonaws.com/blocks/application-ui/devices/playstation-5.png>; rel=preload; as=\"image\"",
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
     "x-next-cache-tags": "_N_T_/layout,_N_T_/table/layout,_N_T_/table/page,_N_T_/table"

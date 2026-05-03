@@ -1,6 +1,6 @@
 {
   "node": {
-    "602b754c08f3c9797a5ddbd2b72c78a24997488d1e": {
+    "60e9b84c49d2a1e77c3f84d1f1fb10529061737e1b": {
       "workers": {
         "app/dashboard/page": {
           "moduleId": 817983,
@@ -12,7 +12,7 @@
       "exportedName": "getBoard",
       "filename": "lib/actions/job-applications.js"
     },
-    "40d5c85a2f682414f09d42340fa93ba9c820d6dcaf": {
+    "40f710aee818134f0fb0ad12cf4dfb423b499c591b": {
       "workers": {
         "app/dashboard/page": {
           "moduleId": 817983,
@@ -24,7 +24,7 @@
       "exportedName": "createJobApplication",
       "filename": "lib/actions/job-applications.js"
     },
-    "604d5c459aa617d2259cf431a5cf384039e46931af": {
+    "600bdeee8d173effac2d3080cf3c7022316162e831": {
       "workers": {
         "app/dashboard/page": {
           "moduleId": 817983,
